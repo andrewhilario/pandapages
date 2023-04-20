@@ -17,7 +17,7 @@ function App() {
           <Route path='/recommendations' element={<Recommendations />} />
           <Route path='/manga/:id' element={<MangaInfo />} />
           <Route path='/read-manga' element={<ReadManga />} />
-          <Route path='about' element={<div>About</div>} />
+          <Route path='/about' element={<div>About</div>} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
       </Layout>
