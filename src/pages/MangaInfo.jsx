@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+
 import {
   Box,
   Button,
@@ -24,9 +24,6 @@ function MangaInfo() {
   const id = Number(params.id);
   const { mangaTitle, mangaInfo: alternativeMangaInfo } = useMangaTitle(id);
   const { mangaInfo, isLoading } = useMangaInfo(mangaTitle, id);
-
-  // console.log(alternativeMangaInfo);
-  // console.log(mangaInfo);
 
   return (
     <>
