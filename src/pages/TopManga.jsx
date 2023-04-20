@@ -85,7 +85,7 @@ function TopManga() {
                   Chapters: {manga?.chapters || 'none'}
                 </Text>
                 <Text color={'gray.700'}>Score: {manga?.score}/10</Text>
-                <Link href={`/manga/info/${manga.mal_id}`}>
+                <Link href={`/manga/${manga.mal_id}`}>
                   <Button w='100%' colorScheme='teal' variant='outline'>
                     Read
                   </Button>
