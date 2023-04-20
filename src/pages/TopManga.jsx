@@ -85,11 +85,16 @@ function TopManga() {
                   Chapters: {manga?.chapters || 'none'}
                 </Text>
                 <Text color={'gray.700'}>Score: {manga?.score}/10</Text>
-                <Link href={`/manga/${manga.mal_id}`}>
-                  <Button w='100%' colorScheme='teal' variant='outline'>
-                    Read
-                  </Button>
-                </Link>
+
+                <Button
+                  as={Link}
+                  href={`/manga/${manga.mal_id}`}
+                  w='100%'
+                  colorScheme='teal'
+                  variant='outline'
+                >
+                  Read
+                </Button>
               </Flex>
             </GridItem>
           ))}
